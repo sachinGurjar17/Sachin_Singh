@@ -10,7 +10,7 @@ function Footer(){
       <div className='bg-slate-100 m-4 sm:m-6 rounded-3xl sm:p-8 p-4  dark:dark:bg-slate-900 dark:text-white  dark:border-white dark:border dark:border-solid'>
         <div className='flex flex-col justify-center items-center space-y-4  sm:flex sm:flex-row sm:justify-center sm:items-center '>
                 <p className='text-md sm:text-lg font-semibold'>• Follow me</p>
-                <ul className='flex space-x-4 justify-center sm:items-end sm:ml-auto text-md sm:text-lg'>
+                <ul className='flex space-x-4 justify-center sm:items-end sm:ml-auto text-2xl'>
                 <a href="https://www.linkedin.com/in/sachin-singh-b74601255" rel="noopener noreferrer"  target="_blank"><BsLinkedin/></a>
                 <a href="https://www.instagram.com/sachin_sg17" rel="noopener noreferrer"  target="_blank"><FaInstagram/></a>
                 <a href = "https://github.com/sachinGurjar17" rel="noopener noreferrer"  target="_blank"><FiGithub/></a>

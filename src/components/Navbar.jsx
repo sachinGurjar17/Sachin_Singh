@@ -20,10 +20,10 @@ function Navbar(){
   },[themeMode])
 
     return(
-        <div className="fixed top-0 " >
-          <div className=" h-20 bg-white p-2  sm:px-18 flex  gap-3.5 sm:gap-80 mt-2 rounded-3xl  dark:dark:bg-slate-700 dark:text-white  dark:border-white dark:border dark:border-solid  shadow-2xl">
+        <div className="fixed top-0 w-full lg:w-2/3 " >
+          <div className="mx-2 h-20 bg-white p-2   sm:px-18 flex  mt-2 rounded-3xl  dark:dark:bg-slate-700 dark:text-white  dark:border-white dark:border dark:border-solid  shadow-2xl">
             <div className="flex items-center flex-grow p-4 gap-3.5 ">
-              <NavLink to="/Sachin_Singh/" className="flex-grow hover:text-gray-300 text-xl md:text-3xl rounded-full border p-2"><IoHomeOutline/></NavLink>
+              <NavLink to="/Sachin_Singh/" className=" hover:text-gray-300 text-xl md:text-3xl rounded-full border p-2"><IoHomeOutline/></NavLink>
               <NavLink to="/Sachin_Singh/about" className="hover:text-gray-300 text-xl md:text-3xl rounded-full  border p-2 "><FaRegUser/></NavLink>
               <NavLink to="/Sachin_Singh/projects" className="hover:text-gray-300 text-xl md:text-xl rounded-full  border p-2 sm:p-4 "><GrProjects/></NavLink>
               <NavLink to="/Sachin_Singh/blogs" className="hover:text-gray-300 text-xl md:text-3xl rounded-full  border p-2"><GoBook/></NavLink>

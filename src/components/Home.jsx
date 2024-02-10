@@ -4,6 +4,7 @@ import InfoBox from './InfoBox';
 import Footer from "./Fotter";
 import { useCallback ,useRef, useState} from "react";
 import { IoCheckmarkDone } from "react-icons/io5";
+import { useTypewriter , Cursor } from "react-simple-typewriter";
 
 function Home() {
 
@@ -19,10 +20,15 @@ function Home() {
     },2000)
   }, [])
 
+  const [text] = useTypewriter({
+    words :[' Sachin Singh', ' web developer'],
+    loop:{},
+  });
+
   return (
     <>     
-          <div className=" whitespace-pre-wrap">
-            <div className=" bg-white flex flex-col space-y-10 rounded-3xl mt-28 mx-2 dark:dark:bg-slate-800 dark:text-white  dark:border-white dark:border dark:border-solid pb-4 shadow-2xl">
+          <div className="w-full lg:w-2/3">
+            <div className="mx-2 bg-white flex flex-col space-y-10 rounded-3xl mt-28  dark:dark:bg-slate-800 dark:text-white  dark:border-white dark:border dark:border-solid pb-4 shadow-2xl">
               <div >
                 <div className='flex justify-between font-semi-bold p-4 sm:p-8 '>
                   <p className= ' text-md sm:text-3xl'>• Full Stack Developer</p>
@@ -30,18 +36,25 @@ function Home() {
                 </div>
               </div>
 
-              <div className='flex flex-col  justify-center items-center sm:flex md:flex-row sm:justify-center sm:items-center space-x-8 mx-4'>
-              <div ><img
-                      src="./images/sachinImg.jpeg"
-                      alt="Sachin Profile Pic"
-                      className='w-44 h-44  rounded-full border-8 border-solid border-slategray p-4 shadow-lg'
-                    />
-              </div>
+              <div className='flex flex-col  justify-center items-center sm:flex md:flex-row sm:justify-center sm:items-center gap-4 lg:gap-20 mx-4'>
+                <img
+                        src="./images/sachinImg.jpeg"
+                        alt="Sachin Profile Pic"
+                        className='w-44 h-44  rounded-full border-8 border-solid border-slategray p-4 shadow-lg'
+                />
                 <div className='flex flex-col justify-center items-center '>
-                  <p className='font-bold text-3xl sm:text-5xl py-4'>I'm Sachin Singh</p>
+                <p className='font-bold text-xl sm:text-3xl py-4'>
+                  I am 
+                  <span className="text-green-400 ">
+                    {text}
+                  </span>
+                  <span className="font-thin text-white dark:text-slate-800">
+                    <Cursor/>
+                  </span>
+                </p>
                   <p className='font-semibold text-slate-500 text-md sm:text-xl'>Currently pursuing B.Tech in CS grad  </p>
-                </div>  
-              
+                </div> 
+                 
               </div>
 
               <div className=' flex space-x-4 justify-center items-center '>

@@ -7,7 +7,7 @@ const Layout = ()=>{
     
     return (
         <>
-          <div className='bg-blue-100  w-srceen flex flex-col h-secreen justify-center items-center overflow-x-hidden pb-6 dark:bg-slate-900 '>          
+          <div className='bg-blue-200 w-srceen flex flex-col h-secreen justify-center items-center overflow-x-hidden pb-6 dark:bg-slate-900 '>          
               <Navbar/>
               <ScrollRestoration/>
               <Outlet/>
@@ -17,3 +17,4 @@ const Layout = ()=>{
 }
 
 export default Layout
+
