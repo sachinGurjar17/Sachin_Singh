@@ -13,7 +13,7 @@ function About(){
 
                 <h2 className="text-xl sm:text-4xl font-bold text-black dark:text-white">LooKing Forward</h2>   
 
-                <p >I want to explore the world of entrepreneurship. I'm passionate about tech, education, linguistics, and social causes. At Oracle, I often take part in volunteering activities available to me. If you have any projects or opportunities in tech and education, feel free to reach out on LinkedIn or send me an email.</p> 
+                <p >I want to explore the worldd of entrepreneurship. I'm passionate about tech, education, linguistics, and social causes. At Oracle, I often take part in volunteering activities available to me. If you have any projects or opportunities in tech and education, feel free to reach out on LinkedIn or send me an email.</p> 
                 <Footer/>        
             </div>
         </div>
