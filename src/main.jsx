@@ -10,11 +10,11 @@ import Blogs from './components/Blogs.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/Sachin_Singh/' element={<Layout />}>
-      <Route  path='/Sachin_Singh/' element={<Home/>}/>
-      <Route  path='/Sachin_Singh/about' element={<About/>}/>
-      <Route  path='/Sachin_Singh/projects' element={<Projects/>}/>
-      <Route  path='/Sachin_Singh/blogs' element={<Blogs/>}/>
+    <Route path='/' element={<Layout />}>
+      <Route  path='/' element={<Home/>}/>
+      <Route  path='/about' element={<About/>}/>
+      <Route  path='/projects' element={<Projects/>}/>
+      <Route  path='/blogs' element={<Blogs/>}/>
     </Route>
   )
 );
