@@ -5,6 +5,8 @@ import Footer from "./Fotter";
 import { useCallback ,useRef, useState} from "react";
 import { IoCheckmarkDone } from "react-icons/io5";
 import { useTypewriter , Cursor } from "react-simple-typewriter";
+import SkillBOx from "./SkillBox";
+import Projects from "./Projects";
 
 function Home() {
 
@@ -64,7 +66,20 @@ function Home() {
                   </span> Copy Email</button> 
               </div>
 
-              <div className='bg-slate-200 m-3 rounded-3xl p-2  dark:dark:bg-slate-900 dark:text-white  dark:border-white dark:border dark:border-solid'>
+             
+                <div className="bg-white flex flex-col space-y-10 rounded-3xl mt-10 mx-2 p-4  dark:dark:bg-slate-800 dark:text-white  dark:border-white dark:border dark:border-solid  text-md text-gray-700 font-medium ">
+                        <p className="text-lg text-black font-semibold  dark:text-white">• Projects</p>                 
+                        <p className='text-2xl sm:text-3xl font-medium p'>My Works</p>
+                        <p className=" text-md ">Explore some of my exciting projects. Most projects are open source, and I welcome your inquiries for more details or collaboration opportunities.</p>
+                  <div className='bg-slate-100  rounded-3xl px-2 pb-2  dark:dark:bg-slate-900 dark:text-white  dark:border-white dark:border dark:border-solid'>
+                        <InfoBox imageSrc={"./images/github.png"} siteLink={"https://github.com/sachinGurjar17"} header={"Open Source"} Info={"Participated in hactoberfest and contribute to many repos"}/>
+                        <InfoBox imageSrc={"./images/mern.png"} siteLink={"#"} header={"Mern Stack Developer"} Info={"Knowledge of MERN tech stacks of web developments"}/>
+                        <InfoBox imageSrc={"./images/leetcode.png"} siteLink={"https://leetcode.com/Sachin_singh6268/"} header={"LeetCode"} Info={"Solved 300+ Questions on LeetCode of problem solving"}/>
+                        <InfoBox imageSrc={"./images/gfg.png"} siteLink={"https://auth.geeksforgeeks.org/user/sachinsg_17"} header={"LeetCode"} Info={"Solved 100+ days streak on Geeks for Geeks"}/>
+                      </div>
+                </div>
+            
+                <div className='bg-slate-200 m-3 rounded-3xl p-2  dark:dark:bg-slate-900 dark:text-white  dark:border-white dark:border dark:border-solid'>
                   <p className='flex text-[20px] font-medium pl-4 pt-4'>• Coding Experience</p>
                   <InfoBox imageSrc={"./images/github.png"} siteLink={"https://github.com/sachinGurjar17"} header={"Open Source"} Info={"Participated in hactoberfest and contribute to many repos"}/>
                   <InfoBox imageSrc={"./images/mern.png"} siteLink={"#"} header={"Mern Stack Developer"} Info={"Knowledge of MERN tech stacks of web developments"}/>
@@ -72,6 +87,16 @@ function Home() {
                   <InfoBox imageSrc={"./images/gfg.png"} siteLink={"https://auth.geeksforgeeks.org/user/sachinsg_17"} header={"Geeks for geeks"} Info={"Solved 100+ days streak on Geeks for Geeks"}/>
                 </div>
 
+                <div className="bg-slate-200 m-3 rounded-3xl px-2 py-2 flex flex-col gap-3 justify-center dark:bg-slate-900 dark:text-white dark:border-white dark:border dark:solid">
+                <p className='flex text-[20px] font-medium pl-3 pt-4'>• Skills</p>
+                  <SkillBOx   header={"React"} Info={"⭐⭐⭐⭐⭐"}/>
+                  <SkillBOx  header={"Tailwind"} Info={"⭐⭐⭐⭐⭐"}/>
+                  <SkillBOx  header={"Javascript"} Info={"⭐⭐⭐⭐⭐"}/>
+                  <SkillBOx  header={"Express"} Info={"⭐⭐⭐⭐⭐"}/>
+                  <SkillBOx  header={"Github"} Info={"⭐⭐⭐⭐⭐"}/>
+                  <SkillBOx  header={"C++"} Info={"⭐⭐⭐⭐⭐"}/>
+
+                </div>
                 <div className='flex flex-col justify-center items-center space-y-4 m-4 sm:m-6 rounded-3xl sm:p-8 p-4  dark:dark:bg-slate-900 dark:text-white '>
                   <h1 className='text-xl sm:text-3xl font-extrabold'> Let's grow together.</h1>
                   <p className='tex-md font-seibold text-slate-600'>Connect with me to talk, work, and share ideas</p>
