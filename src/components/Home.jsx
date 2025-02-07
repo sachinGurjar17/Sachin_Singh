@@ -1,12 +1,15 @@
 import { CiLinkedin } from "react-icons/ci";
 import { FaRegCopy } from "react-icons/fa";
 import InfoBox from './InfoBox';
-import Footer from "./Fotter";
+import Footer from "./footer";
 import { useCallback ,useRef, useState} from "react";
 import { IoCheckmarkDone } from "react-icons/io5";
 import { useTypewriter , Cursor } from "react-simple-typewriter";
 import SkillBOx from "./SkillBox";
 import Projects from "./Projects";
+import { Button } from "./ui/button";
+import { IoCloudDownloadOutline } from "react-icons/io5";
+import { ImWhatsapp } from "react-icons/im";
 
 function Home() {
 
@@ -29,77 +32,43 @@ function Home() {
 
   return (
     <>     
-          <div className="w-full lg:w-2/3">
-            <div className="mx-2 bg-white flex flex-col space-y-10 rounded-3xl mt-28  dark:dark:bg-slate-800 dark:text-white  dark:border-white dark:border dark:border-solid pb-4 shadow-2xl">
+          <div className="w-full lg:w-2/3 ">
+            <div className="mx-2 bg-white flex flex-col space-y-10 rounded-3xl mt-28  dark:dark:bg-zinc-800 dark:text-white dark:border-gray-600 dark:border-[0.5px] pb-4 shadow-lg">
               <div >
-                <div className='flex justify-between font-semi-bold p-4 sm:p-8 '>
-                  <p className= ' text-md sm:text-3xl'>• Full Stack Developer</p>
-                  <p className='ml-auto  bg-green-200 rounded-3xl font-bold p-2 text-[10px] text-green-600'>⊙ ONLINE</p>
+                <div className='flex justify-between p-4'>
+                  <p className= 'text-sm sm:text-xl'>• Full Stack Developer</p>
                 </div>
               </div>
 
-              <div className='flex flex-col  justify-center items-center sm:flex md:flex-row sm:justify-center sm:items-center gap-4 lg:gap-20 mx-4'>
+              <div className='flex flex-col  justify-center items-center gap-4'>
                 <img
-                        src="./images/sachinImg.jpeg"
+                        src="./images/pip.png"
                         alt="Sachin Profile Pic"
-                        className='w-44 h-44  rounded-full border-8 border-solid border-slategray p-4 shadow-lg'
+                        className='w-56 h-44 rounded-3xl'
                 />
                 <div className='flex flex-col justify-center items-center '>
-                <p className='font-bold text-xl sm:text-3xl py-4'>
-                  I am 
-                  <span className="text-green-400 ">
-                    {text}
-                  </span>
-                  <span className="font-thin text-white dark:text-slate-800">
-                    <Cursor/>
-                  </span>
+                <p className='font-mono !text-[3rem] mt-2 max-sm:!text-[1.6rem] !whitespace-nowrap tracking-tighter text-center '>
+                  Hi, I'm Sachin Singh
                 </p>
-                  <p className='font-semibold text-slate-500 text-md sm:text-xl'>Currently pursuing B.Tech in CS grad  </p>
+                <p className=" px-24 mt-2 max-sm:mt-5 max-sm:px-3 !text-base max-sm:!text-sm text-center !font-normal !tracking-normal inter !leading-6 ">Full Stack Web Developer Building Impactful Web Applications. I specialize in creating production-ready web apps from the ground up, with a focus on both frontend and backend development. Passionate about solving real-world problems and always open to new challenges. </p>
                 </div> 
                  
               </div>
 
               <div className=' flex space-x-4 justify-center items-center '>
-                <a href="https://www.linkedin.com/in/sachin-singh-b74601255/" rel="noopener noreferrer"  target="_blank"  className='flex items-center text-sm sm:text-lg font-bold bg-blue-600 text-white  rounded-2xl p-2 shadow-xl'><span className='text-lg sm:text-3xl'><CiLinkedin /></span> LinkedIn</a>
-                <button onClick={copyPasswordToClipboard} className='hover:bg-slate-300 flex items-center text-sm sm:text-lg font-bold bg-slate-400 text-black rounded-2xl p-2 shadow-xl'><span className='text-lg sm:text-2xl'>
+                <a href="https://drive.google.com/file/d/1JV8a_rjv9-tBXJ9_Rw2__VtJi9EZ-tuG/view?usp=drive_link" target="_blank" className="  flex-nowrap flex flex-row justify-center items-center px-3 py-1 text-lg rounded-xl gap-2 bg-black text-white hover:text-black hover:border-black hover:border dark:hover:border-white dark:text-black hover: border-white border-solid dark:border-black dark:bg-white hover:bg-white dark:hover:bg-black dark:hover:text-white">Resume <IoCloudDownloadOutline/></a>
+
+                <Button onClick={copyPasswordToClipboard} className=" bg-gray-400 text-black rounded-xl hover:bg-white hover:text-black shadow-lg "> <span className='text-lg sm:text-2xl '>
                       {isCopied ? <IoCheckmarkDone/>:<FaRegCopy/>}
-                  </span> Copy Email</button> 
+                  </span> Copy Email</Button> 
               </div>
-
-             
-                <div className="bg-white flex flex-col space-y-10 rounded-3xl mt-10 mx-2 p-4  dark:dark:bg-slate-800 dark:text-white  dark:border-white dark:border dark:border-solid  text-md text-gray-700 font-medium ">
-                        <p className="text-lg text-black font-semibold  dark:text-white">• Projects</p>                 
-                        <p className='text-2xl sm:text-3xl font-medium p'>My Works</p>
-                        <p className=" text-md ">Explore some of my exciting projects. Most projects are open source, and I welcome your inquiries for more details or collaboration opportunities.</p>
-                  <div className='bg-slate-100  rounded-3xl px-2 pb-2  dark:dark:bg-slate-900 dark:text-white  dark:border-white dark:border dark:border-solid'>
-                        <InfoBox imageSrc={"./images/github.png"} siteLink={"https://github.com/sachinGurjar17"} header={"Open Source"} Info={"Participated in hactoberfest and contribute to many repos"}/>
-                        <InfoBox imageSrc={"./images/mern.png"} siteLink={"#"} header={"Mern Stack Developer"} Info={"Knowledge of MERN tech stacks of web developments"}/>
-                        <InfoBox imageSrc={"./images/leetcode.png"} siteLink={"https://leetcode.com/Sachin_singh6268/"} header={"LeetCode"} Info={"Solved 300+ Questions on LeetCode of problem solving"}/>
-                        <InfoBox imageSrc={"./images/gfg.png"} siteLink={"https://auth.geeksforgeeks.org/user/sachinsg_17"} header={"LeetCode"} Info={"Solved 100+ days streak on Geeks for Geeks"}/>
-                      </div>
-                </div>
-            
-                <div className='bg-slate-200 m-3 rounded-3xl p-2  dark:dark:bg-slate-900 dark:text-white  dark:border-white dark:border dark:border-solid'>
-                  <p className='flex text-[20px] font-medium pl-4 pt-4'>• Coding Experience</p>
-                  <InfoBox imageSrc={"./images/github.png"} siteLink={"https://github.com/sachinGurjar17"} header={"Open Source"} Info={"Participated in hactoberfest and contribute to many repos"}/>
-                  <InfoBox imageSrc={"./images/mern.png"} siteLink={"#"} header={"Mern Stack Developer"} Info={"Knowledge of MERN tech stacks of web developments"}/>
-                  <InfoBox imageSrc={"./images/leetcode.png"} siteLink={"https://leetcode.com/Sachin_singh6268/"} header={"LeetCode"} Info={"Solved 300+ Questions on LeetCode of problem solving"}/>
-                  <InfoBox imageSrc={"./images/gfg.png"} siteLink={"https://auth.geeksforgeeks.org/user/sachinsg_17"} header={"Geeks for geeks"} Info={"Solved 100+ days streak on Geeks for Geeks"}/>
-                </div>
-
-                <div className="bg-slate-200 m-3 rounded-3xl px-2 py-2 flex flex-col gap-3 justify-center dark:bg-slate-900 dark:text-white dark:border-white dark:border dark:solid">
-                <p className='flex text-[20px] font-medium pl-3 pt-4'>• Skills</p>
-                  <SkillBOx   header={"React"} Info={"⭐⭐⭐⭐⭐"}/>
-                  <SkillBOx  header={"Tailwind"} Info={"⭐⭐⭐⭐⭐"}/>
-                  <SkillBOx  header={"Javascript"} Info={"⭐⭐⭐⭐⭐"}/>
-                  <SkillBOx  header={"Express"} Info={"⭐⭐⭐⭐⭐"}/>
-                  <SkillBOx  header={"Github"} Info={"⭐⭐⭐⭐⭐"}/>
-                  <SkillBOx  header={"C++"} Info={"⭐⭐⭐⭐⭐"}/>
-
-                </div>
-                <div className='flex flex-col justify-center items-center space-y-4 m-4 sm:m-6 rounded-3xl sm:p-8 p-4  dark:dark:bg-slate-900 dark:text-white '>
+              <div className='flex flex-col justify-center items-center space-y-4 m-4 sm:m-6 rounded-3xl sm:p-8 p-4  '>
                   <h1 className='text-xl sm:text-3xl font-extrabold'> Let's grow together.</h1>
-                  <p className='tex-md font-seibold text-slate-600'>Connect with me to talk, work, and share ideas</p>
+                  <p className='tex-md font-seibold text-gray-600 dark:text-white '>Connect with me to talk, work, and share ideas</p>
+
+                  <a href="https://wa.me/6268486185?text=Hello%20there!" target="_blank" className="flex flex-row gap-2 justify-center items-center bg-green-500 hover:bg-green-300 hover:text-gray-700 p-2  rounded-xl">
+                    <span>Chat on WhatsApp </span><ImWhatsapp/>
+                  </a>
                 </div>
                 <Footer/>
             </div>

@@ -1,9 +1,9 @@
 import InfoBox from "./InfoBox"
-import Footer from "./Fotter"
+import Footer from "./Footer"
 function Projects(){
     return(
         <div className="w-full lg:w-2/3">
-          <div className="bg-white flex flex-col space-y-10 rounded-3xl mt-28 mx-2 p-4  dark:dark:bg-slate-800 dark:text-white  dark:border-white dark:border dark:border-solid  text-md text-gray-700 font-medium ">
+          <div className="bg-white flex flex-col space-y-10 rounded-3xl mt-28 mx-2 p-4  dark:dark:bg-zinc-700 dark:text-white  dark:border-white dark:border dark:border-solid  text-md text-gray-700 font-medium ">
                   <p className="text-lg text-black font-semibold  dark:text-white">• Projects</p>                 
                   <p className='text-2xl sm:text-3xl font-medium p'>My Works</p>
                   <p className=" text-md ">Explore some of my exciting projects. Most projects are open source, and I welcome your inquiries for more details or collaboration opportunities.</p>
