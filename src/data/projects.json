@@ -1,0 +1,36 @@
+{
+    "skills": [
+    "Java", "JavaScript", "TypeScript", "HTML", "CSS",
+    "React", "Next.js", "Redux", "Node.js", "Express.js",
+    "Tailwind CSS", "Material UI", "MongoDB", "Firebase",
+    "Operating Systems", "Computer Networks", "DBMS", "OOPs"
+    ],
+    
+    "projects": [
+      {
+        "title": "Codeflix",
+        "description": "A platform for solving coding problems with real-time feedback and solutions using the Judge0 API.",
+        "techStack": ["React", "Firebase", "Judge0 API", "TypeScript"],
+        "liveLink": "https://listify17.netlify.app/",
+        "githubLink": "https://github.com/sachinGurjar17/Codeflix",
+        "image": "/images/codeflix.png"
+      },
+      {
+        "title": "Listify – Task Manager",
+        "description": "A 100% responsive task managing application using the MERN stack.",
+        "techStack": ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
+        "liveLink": "https://listify17.netlify.app/",
+        "githubLink": "https://github.com/sachinGurjar17/Listify17",
+        "image": "/images/listify.png"
+      },
+      {
+        "title": "Leaderboard Application",
+        "description": "A leaderboard application to manage user points and history with a responsive frontend and a RESTful backend.",
+        "techStack": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+        "liveLink": "https://leaderboard-task-rose.vercel.app/",
+        "githubLink": "https://github.com/sachinGurjar17/leaderboardTask",
+        "image": ""
+      }
+    ]
+}
+  
