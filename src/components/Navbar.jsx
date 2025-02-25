@@ -21,7 +21,7 @@ function Navbar(){
   },[themeMode])
 
     return(
-        <div className="fixed top-0 w-full lg:w-2/3 " >
+        <div className="fixed top-0 w-full lg:w-2/3 z-50" >
           <div className="mx-2 p-2 bg-white sm:px-18 flex mt-2 rounded-2xl dark:bg-zinc-700 dark:text-white shadow-sm border dark:border-gray-500">
             <div className="flex items-center flex-grow px-4 py-2 gap-3.5 ">
               <NavLink to="/" className={ ({isActive})=> `group hover:text-gray-300 text-lg md:text-2xl rounded-full p-2 ${isActive ? "dark:bg-gray-900 text-yellow-600 font-bold" : ""}`}>

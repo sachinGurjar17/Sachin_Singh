@@ -10,8 +10,8 @@
       {
         "title": "Codeflix",
         "description": "A platform for solving coding problems with real-time feedback and solutions using the Judge0 API.",
-        "techStack": ["React", "Firebase", "Judge0 API", "TypeScript"],
-        "liveLink": "https://listify17.netlify.app/",
+        "techStack": ["React","TypeScript", "Tailwind CSS", "Recoil", "Firebase", "Judge0 API",  "Firebase Database"],
+        "liveLink": "https://daily-code-fawn.vercel.app/",
         "githubLink": "https://github.com/sachinGurjar17/Codeflix",
         "image": "/images/codeflix.png"
       },
@@ -29,6 +29,14 @@
         "techStack": ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
         "liveLink": "https://leaderboard-task-rose.vercel.app/",
         "githubLink": "https://github.com/sachinGurjar17/leaderboardTask",
+        "image": ""
+      },
+      {
+        "title": "This Website",
+        "description": "A Portfolio website for showcasing my projects and skills with contact detail",
+        "techStack": ["React", "Vite", "Tailwind CSS" , "Shadcn"],
+        "liveLink": "https://sachin-singh.vercel.app/",
+        "githubLink": "https://github.com/sachinGurjar17/Sachin_Singh",
         "image": ""
       }
     ]
