@@ -65,7 +65,7 @@ function Home() {
               </div>
 
               <div className='flex flex-row justify-center items-center gap-3 '>
-                <a href="https://drive.google.com/file/d/1JV8a_rjv9-tBXJ9_Rw2__VtJi9EZ-tuG/view?usp=drive_link" target="_blank" className="  flex-nowrap flex flex-row justify-center items-center px-3 py-1  text-lg rounded-xl gap-2 bg-black text-white hover:text-black hover:border-black hover:bg-gray-400 dark:hover:border-white dark:text-black hover: border-white border-solid dark:border-black dark:bg-white dark:hover:bg-black dark:hover:text-white">Resume <IoCloudDownloadOutline/></a>
+                <a href="https://drive.google.com/file/d/12U6yKawF0a5sS07B_JnWsOR2YkohiKp1/view?usp=sharing" target="_blank" className="  flex-nowrap flex flex-row justify-center items-center px-3 py-1  text-lg rounded-xl gap-2 bg-black text-white hover:text-black hover:border-black hover:bg-gray-400 dark:hover:border-white dark:text-black hover: border-white border-solid dark:border-black dark:bg-white dark:hover:bg-black dark:hover:text-white">Resume <IoCloudDownloadOutline/></a>
 
                 <Button onClick={copyPasswordToClipboard} className=" bg-gray-400 text-black rounded-xl hover:bg-white hover:text-black shadow-lg "> <span className='text-lg sm:text-2xl '>
                       {isCopied ? <IoCheckmarkDone/>:<FaRegCopy/>}
